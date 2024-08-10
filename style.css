@@ -34,6 +34,33 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 0.85;
+  height: auto;
+  background: url("img/wave.png");
+  background-size: 1000px 100px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+.header h1 {
+  font-size: 70px;
+  color: var(--main-color);
+  text-align: center;
 }
 
 .middel {
@@ -46,4 +73,8 @@
 
 .middel h1 {
   font-size: 70px;
+}
+
+.bi-bi-hous {
+  margin-right: 3px;
 }/*# sourceMappingURL=style.css.map */
